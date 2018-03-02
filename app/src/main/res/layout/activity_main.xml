@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.veraj.weatherapp.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Mississauga, CAN"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/city"
+        android:id="@+id/icon"
+        android:background="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_alignTop="@+id/icon"
+        android:text="24 Deg"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wind"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/icon"
+        android:textSize="15sp"
+        android:text="Wind"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloud"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/wind"
+        android:textSize="15sp"
+        android:text="Cloud"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressure"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cloud"
+        android:textSize="15sp"
+        android:text="Cloud"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/humidity"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pressure"
+        android:textSize="15sp"
+        android:text="Cloud"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunrise"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/humidity"
+        android:textSize="15sp"
+        android:text="Cloud"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sunset"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sunrise"
+        android:textSize="15sp"
+        android:text="Cloud"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updated"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:textSize="15sp"
+        android:text="Last Updated:"/>
+</RelativeLayout>
